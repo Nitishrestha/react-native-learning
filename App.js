@@ -12,18 +12,23 @@ const App = () => {
   return (
     <View>
       <Text style={{fontSize:30}}>React-native file structure</Text>
-      <Button title='Save'></Button>
+      <Button title='Save' onPress={save}></Button>
       <Text>Line Breaker</Text>
-      <Button title='Delete'></Button>
+      <Button title='Delete' onPress={()=> delet()}></Button>
       <CompanyData/>
       <Text></Text>
-      <UserDetail/>
-      <UserDetail/>
-      <UserDetail/>
       <UserDetail/>
     </View>
   );
 };
+
+const save = () => {
+  console.warn('save called')
+}
+
+const delet = () => {
+  console.warn('delete called')
+}
 
 const UserDetail = () => {
   return(
