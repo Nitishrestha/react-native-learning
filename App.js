@@ -1,44 +1,44 @@
 
 import React from 'react';
+import EXstyle from './styles/style'
+
 import {
   Button,
-  StyleSheet,
   Text,
   View,
+  StyleSheet
 } from 'react-native';
 import CompanyData from './components/CompanyData'
 
 const App = () => {
   return (
     <View>
-      <Text style={{fontSize:30}}>React-native file structure</Text>
-      <Button title='Save' onPress={save}></Button>
-      <Text>Line Breaker</Text>
-      <Button title='Delete' onPress={()=> delet()}></Button>
-      <CompanyData/>
-      <Text></Text>
-      <UserDetail/>
+      {/* Style only a particular component inside a single file is internal style */}
+      <Text style={{fontSize:30}}>Styles in react native</Text>
+
+
+      <Text style={style.textBox}>Styles in react native</Text>
+      <Text style={EXstyle.textBox2}>Styles in react native</Text>
+      <Text style={style.textBox}>Styles in react native</Text>
+      <Text style={EXstyle.textBox2}>Styles in react native</Text> 
     </View>
   );
 };
 
-const save = () => {
-  console.warn('save called')
-}
-
-const delet = () => {
-  console.warn('delete called')
-}
-
-const UserDetail = () => {
-  return(
-    <View>
-      <Text style={{fontSize:30}}> Name: Nitish</Text>
-      <Text style={{fontSize:30}}> Age: 30</Text>
-      <Text style={{fontSize:30}}> Email: Nitishrestha8848@gmail.com</Text>
-    </View>
-  )
-
-}
+const style = StyleSheet.create({
+  textBox:{
+    color: 'black',
+    fontSize:20,
+     backgroundColor: 'white',
+     marginTop:4,
+     textAlign:'center'
+  },
+  textBox2:{
+    color: 'white',
+    fontSize:30,
+     backgroundColor: 'black',
+     marginTop:4
+  }
+})
 
 export default App;
