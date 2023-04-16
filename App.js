@@ -13,6 +13,7 @@ import CompanyData from './components/CompanyData'
 const App = () => {
   return (
     <View>
+      
       {/* Style only a particular component inside a single file is internal style */}
       <Text style={{fontSize:30}}>Styles in react native</Text>
 
