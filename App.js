@@ -2,6 +2,8 @@ import React from 'react';
 
 import {Text, View, StyleSheet} from 'react-native';
 
+import user from './User';
+
 const App = () => {
   return (
     <View>
