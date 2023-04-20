@@ -1,0 +1,18 @@
+Why flatlist?
+Flatlist has lots of features.
+we can add header footer in the list.
+
+When there are more element, flat list manages the items in a convinient way.
+it will remove the element from top and bottom views in order to make the scroll
+work smoothly.
+
+If we had used map function, it will not remove as it is the core function/feature of js.
+If our mobile phone is of low feature, then we will face issues while using scroll and others.
+
+So, flatlist will be convinient to use at that time. We can also use lazy loading with flatlist which 
+cant be use with the map(will require an extra logics)
+
+
+
+
+
