@@ -5,7 +5,7 @@ import {Text, View, StyleSheet} from 'react-native';
 const App = () => {
   return (
     <View>
-      <Text style={style.textBox}>This is the main page</Text>
+      <Text style={style.textBox}>Component in Loop with Flatlist</Text>
     </View>
   );
 };
